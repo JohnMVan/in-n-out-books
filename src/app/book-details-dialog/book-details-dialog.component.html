@@ -1,0 +1,25 @@
+<!--
+Title:  book-details-dialog.component.html
+Author: John Vanhessche
+Date 2 February 2023
+Description:  HTML file for the book-details component.
+-->
+
+<mat-card>
+    <mat-card-title class="blue">
+        {{ book.title }}
+    </mat-card-title>   
+    <br> 
+    <mat-card-content>
+        <div fxLayout="column" class="book-details">
+            <p><em>ISBN:</em> {{ book.isbn }}</p>
+            <p><em>Title:</em> {{ book.title }}</p>
+            <p><em>Description:</em> {{ book.description }}</p>
+            <p><em>Number of Pages:</em> {{ book.numOfPages }}</p>
+            <p><em>Authors:</em> {{ book.authors.join(', ') }}</p>
+        </div>    
+    </mat-card-content>
+    <mat-card-actions align="end">
+        <button mat-raised-button color="accent" matDialogClose="confirm">OK</button>
+    </mat-card-actions>
+</mat-card>

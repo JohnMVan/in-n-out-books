@@ -1,0 +1,15 @@
+/*
+Title:  book-list.component.css
+Author: John Vanhessche
+Date 2 February 2023
+Description:  CSS file for the book-list component.
+*/
+
+.a-link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.a-link:hover {
+    text-decoration: underline;
+}
